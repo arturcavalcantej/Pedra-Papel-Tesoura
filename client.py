@@ -1,6 +1,18 @@
 import pygame
 from network import Network
 import pickle
+import logging
+
+log_format = '%(asctime)s:%(levelname)s:%(filename)s:%(message)s'
+logging.basicConfig(filename='client.log',
+                    # w -> sobrescreve o arquivo a cada log
+                    # a -> não sobrescreve o arquivo
+                    filemode='w',
+                    level=logging.DEBUG,
+                    format=log_format)
+logger = logging.getLogger('root')
+
+
 pygame.font.init()
 
 width = 700
@@ -88,6 +100,7 @@ def main():
     n = Network()
     player = int(n.getP())
     print("You are player", player)
+    logger.info(f'Jogador {player} entrou.')
 
     while run:
         clock.tick(60)
