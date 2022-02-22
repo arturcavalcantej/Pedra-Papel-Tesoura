@@ -2,6 +2,16 @@ import socket
 from _thread import *
 import pickle
 from game import Game
+import logging
+
+log_format = '%(asctime)s:%(levelname)s:%(filename)s:%(message)s'
+logging.basicConfig(filename='server.log',
+                    # w -> sobrescreve o arquivo a cada log
+                    # a -> não sobrescreve o arquivo
+                    filemode='w',
+                    level=logging.DEBUG,
+                    format=log_format)
+logger = logging.getLogger('root')
 
 server = "localhost"
 port = 8080
@@ -61,6 +71,7 @@ def threaded_client(conn, p, gameId):
 while True:
     conn, addr = s.accept()
     print("Connected to:", addr)
+    logger.info(f'Conectado ao: {addr}')
 
     idCount += 1
     p = 0
@@ -68,6 +79,7 @@ while True:
     if idCount % 2 == 1:
         games[gameId] = Game(gameId)
         print("Creating a new game...")
+        logger.info('Criando novo jogo.')
     else:
         games[gameId].ready = True
         p = 1
