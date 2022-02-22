@@ -157,10 +157,15 @@ def menu_screen():
 
     while run:
         clock.tick(60)
-        win.fill((128, 128, 128))
-        font = pygame.font.SysFont("comicsans", 60)
+        win.fill((200, 200, 200))
+        font = pygame.font.SysFont(None, 75)
+        font2 = pygame.font.SysFont(None, 34)
         text = pygame.image.load("media/4144475.png").convert_alpha()
+        text2 = font.render("Pedra, Papel e Tesoura!", 1, (10,10,0))
+        text3 = font2.render("REDES - Guilherme Monteiro e Artur Cavalcante", 1, (10,10,0))
         win.blit(text, (100,200))
+        win.blit(text2, (60,50))
+        win.blit(text3, (75,120))
         pygame.display.update()
 
         for event in pygame.event.get():
