@@ -146,7 +146,7 @@ def menu_screen():
         clock.tick(60)
         win.fill((128, 128, 128))
         font = pygame.font.SysFont("comicsans", 60)
-        text = pygame.image.load("/home/guilherme/Área de Trabalho/4144475.png").convert_alpha()
+        text = pygame.image.load("media/4144475.png").convert_alpha()
         win.blit(text, (100,200))
         pygame.display.update()
 
