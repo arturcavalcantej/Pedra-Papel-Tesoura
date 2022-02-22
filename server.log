@@ -1,5 +1,5 @@
-2022-02-21 23:26:45,727:INFO:server.py:Conectado ao: ('127.0.0.1', 53478)
-2022-02-21 23:26:45,727:INFO:server.py:Criando novo jogo.
-2022-02-21 23:26:48,829:INFO:server.py:Conectado ao: ('127.0.0.1', 53480)
-2022-02-21 23:27:04,476:INFO:server.py:Conectado ao: ('127.0.0.1', 53482)
-2022-02-21 23:27:04,477:INFO:server.py:Criando novo jogo.
+2022-02-22 00:11:37,873:INFO:server.py:Conectado ao: ('127.0.0.1', 53562)
+2022-02-22 00:11:37,873:INFO:server.py:Criando novo jogo.
+2022-02-22 00:11:47,586:INFO:server.py:Conectado ao: ('127.0.0.1', 53564)
+2022-02-22 00:11:58,977:INFO:server.py:Conectado ao: ('127.0.0.1', 53566)
+2022-02-22 00:11:58,977:INFO:server.py:Criando novo jogo.
