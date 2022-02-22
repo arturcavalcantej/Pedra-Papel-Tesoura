@@ -21,16 +21,16 @@ class Game:
     def bothWent(self):
         return self.p1Went and self.p2Went
     def winner(self):
-        p1 = self.moves[0].upper()[0]
-        p2 = self.moves[1].upper()[0]
+        p1 = self.moves[0].upper()[2]
+        p2 = self.moves[1].upper()[2]
         winner = -1
-        if p1 =="R" and p2 =="S":
+        if p1 =="D" and p2 =="S":
             winner = 0
-        elif p1 =="S" and p2 =="R":
+        elif p1 =="S" and p2 =="D":
             winner = 1
-        elif p1 =="P" and p2 =="R":
+        elif p1 =="P" and p2 =="D":
             winner = 0
-        elif p1 =="R" and p2 =="P":
+        elif p1 =="D" and p2 =="P":
             winner = 1
         elif p1 =="S" and p2 =="P":
             winner = 0

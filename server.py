@@ -24,7 +24,7 @@ except socket.error as e:
     str(e)
 
 s.listen(2)
-print("Waiting for a connection, Server Started")
+print("Aguardando conexão")
 
 connected = set()
 games = {}
@@ -57,10 +57,10 @@ def threaded_client(conn, p, gameId):
         except:
             break
 
-    print("Lost connection")
+    print("Conexão perdida")
     try:
         del games[gameId]
-        print("Closing Game", gameId)
+        print("Fechando jogo", gameId)
     except:
         pass
     idCount -= 1
@@ -78,7 +78,7 @@ while True:
     gameId = (idCount - 1)//2
     if idCount % 2 == 1:
         games[gameId] = Game(gameId)
-        print("Creating a new game...")
+        print("Criando novo jogo...")
         logger.info('Criando novo jogo.')
     else:
         games[gameId].ready = True
