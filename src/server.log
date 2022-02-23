@@ -1,9 +1,9 @@
-2022-02-23 19:55:40,922:INFO:server.py:Conexão estabelecida.
-2022-02-23 19:55:44,764:INFO:server.py:Conectado ao: ('127.0.0.1', 52320)
-2022-02-23 19:55:44,764:INFO:server.py:Criando novo jogo.
-2022-02-23 19:55:49,611:INFO:server.py:Conectado ao: ('127.0.0.1', 52322)
-2022-02-23 19:56:14,058:INFO:server.py:Conexão perdida.
-2022-02-23 19:56:14,067:INFO:server.py:Conexão perdida.
-2022-02-23 19:56:16,080:INFO:server.py:Conectado ao: ('127.0.0.1', 52324)
-2022-02-23 19:56:16,081:INFO:server.py:Criando novo jogo.
-2022-02-23 19:56:16,109:INFO:server.py:Conexão perdida.
+2022-02-23 20:24:09,763:INFO:server.py:Conexão estabelecida.
+2022-02-23 20:24:20,607:INFO:server.py:Conectado ao: ('127.0.0.1', 40794)
+2022-02-23 20:24:20,607:INFO:server.py:Criando novo jogo.
+2022-02-23 20:24:25,861:INFO:server.py:Conectado ao: ('127.0.0.1', 40796)
+2022-02-23 20:24:51,383:INFO:server.py:Conexão perdida.
+2022-02-23 20:24:51,383:INFO:server.py:Conexão perdida.
+2022-02-23 20:24:52,428:INFO:server.py:Conectado ao: ('127.0.0.1', 40798)
+2022-02-23 20:24:52,428:INFO:server.py:Criando novo jogo.
+2022-02-23 20:24:52,575:INFO:server.py:Conexão perdida.
