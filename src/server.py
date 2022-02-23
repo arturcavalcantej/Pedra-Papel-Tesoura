@@ -1,7 +1,7 @@
 import socket
 from _thread import *
 import pickle
-from src.game import Game
+from game import Game
 import logging
 
 log_format = '%(asctime)s:%(levelname)s:%(filename)s:%(message)s'
@@ -25,7 +25,7 @@ except socket.error as e:
 
 s.listen(2)
 print("Conexão estabelecida")
-
+logger.info('Conexão estabelecida.')
 connected = set()
 games = {}
 idCount = 0
@@ -58,6 +58,7 @@ def threaded_client(conn, p, gameId):
             break
 
     print("Conexão perdida")
+    logger.info('Conexão perdida.')
     try:
         del games[gameId]
         print("Fechando jogo", gameId)
