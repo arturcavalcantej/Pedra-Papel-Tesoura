@@ -1,7 +1,7 @@
 import socket
 from _thread import *
 import pickle
-from game import Game
+from src.game import Game
 import logging
 
 log_format = '%(asctime)s:%(levelname)s:%(filename)s:%(message)s'
@@ -24,7 +24,7 @@ except socket.error as e:
     str(e)
 
 s.listen(2)
-print("Aguardando conexão")
+print("Conexão estabelecida")
 
 connected = set()
 games = {}
